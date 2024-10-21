@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Développement et Intégration de l'Application "Bibliomaniac" 📚
 Description du Projet
 Ce projet consiste à concevoir et intégrer une application numérique dédiée à la gestion de livres, en utilisant la sémantique de l'HTML5 et le style moderne du CSS3.
@@ -34,3 +35,7 @@ Test de l'application en tant qu'utilisateur
 Livrables
 Repo Git
 Projet déployé via GitHub Pages
+=======
+# bibliomaniac_ac_sm
+travailCollaboratif_agnes/sergei
+>>>>>>> c883974edf84d790cc6bda622553491ff0df376d
