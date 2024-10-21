@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        footer {
+            background-color: #fff;
+            padding: 1rem;
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around; /* Distribute logos evenly */
+            align-items: center;
+        }
+
+        .nav-logo {
+            max-height: 3rem; /* Adjust size as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG/purpBooks.png" alt="Logo" class="logo">
+        <h1>Mon Titre</h1>
+        <h1>Activités récentes</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher...">
+            <span class="search-icon">🔍</span>
+        </div>
+    </header>
+    
+    <section class="recent-activities">
+        <div class="carousel">
+            <div class="activity-card">
+                <img src="IMG/kids.jpg" alt="Activités récentes">
+            </div>
+            <div class="activity-card">
+                <img src="IMG/kids.jpg" alt="Activités récentes">
+            </div>
+            <div class="activity-card">
+                <img src="IMG/kids.jpg" alt="Activités récentes">
+            </div>
+            <div class="activity-card">
+                <img src="IMG/kids.jpg" alt="Activités récentes">
+            </div>
+        </div>
+    </section>
+    
+    <section class="popular">
+        <h2>Populaire</h2>
+        <div class="carousel">
+            <div class="book-card">
+                <img src="IMG/jaws.jpg" alt="Jaws">
+                <h3>Titre du livre</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/noth.jpeg" alt="Nothing Else But Miracles">
+                <h3>Titre du livre</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/metamorphosis.jpg" alt="The Metamorphosis">
+                <h3>Titre du livre</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/metamorphosis.jpg" alt="The Metamorphosis">
+                <h3>Titre du livre</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/metamorphosis.jpg" alt="The Metamorphosis">
+                <h3>Titre du livre</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/think and grow.webp" alt="Think and Grow Rich">
+                <h3>Think and Grow Rich</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/noth.jpeg" alt="Nothing Else but Miracles">
+                <h3>Nothing Else but Miracles</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/TheSumofAllThings.webp" alt="The Sum of All Things">
+                <h3>The Sum of All Things</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/sleep.jpeg" alt="The Wonderful">
+                <h3>The Wonderful</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+            <div class="book-card">
+                <img src="IMG/sleep.jpeg" alt="The Metamorphosis">
+                <h3>To sleep in a sea of stars</h3>
+                <p>Auteurs du livre</p>
+                <p>$???.00</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="categories">
+        <h2>Catégories</h2>
+        <div class="category-card" id="category-container">
+            <img src="IMG/horr.webp" alt="Catégorie">
+        </div>
+    </section>
+
+    <section class="allBooks">
+        <h2>HELLO LES LIVRES </h2>
+        <div class="book-card" id="allBook-container">
+            <h3>Titre du livre</h3>
+            <p>Auteurs du livre</p>
+        </div>
+
+    <footer>
+        <nav class="bottom-nav"></nav>
+            <a href="#">📖</a>
+            <a href="mes-livres.html" id="favoris-btn">📚</a>
+            <a href="#">💬</a>
+            <a href="#">👤</a>
+        </nav>
+    </footer>
+
+    <script src="fetchDatas.js"></script>
+    
+  </body>
+</html>
