@@ -96,6 +96,7 @@ header h1 {
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: 200px;
+    height: 425px;
     background-color: #fff;
     padding: 1rem;
     border-radius: 0.625rem;
@@ -110,6 +111,7 @@ header h1 {
     width: 100%;
     height: auto;
     border-radius: 0.625rem;
+    aspect-ratio: 1/1.5;
 }
 
 .carousel .activity-card:hover,
@@ -119,6 +121,10 @@ header h1 {
     /* Enlarge the card on hover */
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
     /* Add a larger shadow on hover */
+}
+
+.carousel .book-card > * {
+    margin: 0.25rem 0;
 }
 
 .popular {

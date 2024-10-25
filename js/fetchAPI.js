@@ -51,8 +51,8 @@ if (isIndexPage) {
       const link = `pages/bookDetails.html?id=${book.id}`;
 
       bookCard.innerHTML = `
-      <img src="${image}" alt="${title}">
-      <h3>${title}</h3>  if (isIndexPage) {
+      <img class="book-card-img" src="${image}" alt="${title}">
+      <h3>${title}</h3>
       <p>${author}</p>
       <p>${price}</p>
       <div class="book-rating">${"★".repeat(rating)}</div>
