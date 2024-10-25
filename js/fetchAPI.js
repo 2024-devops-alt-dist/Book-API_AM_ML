@@ -1,11 +1,3 @@
-// recup l id dans l'url pour afficher les datas
-const queryString_url_id = window.location.search;
-console.log("id dans l'url", queryString_url_id);
-const urlParams = new URLSearchParams(queryString_url_id);
-console.log("object url params", urlParams);
-const theId = urlParams.get("id");
-console.log("the id", theId);
-
 // Vérifier sur quelle page on est
 const isIndexPage = document.querySelector(".popular"); // Check si on est sur index.html
 const isMesLivresPage = document.getElementById("book-details"); // Check si on est sur mes-livres.html
@@ -25,7 +17,7 @@ async function getAPIData(search = "fiction", maxResults = 10) {
   }
 }
 
-async function getAPIDataDetails() {
+async function getAPIDataDetails(theId) {
   try {
     const response = await fetch(
       `https://books.googleapis.com/books/v1/volumes/${theId}`
@@ -108,7 +100,15 @@ if (isIndexPage) {
     });
   });
 } else if (isBookDetailsPage) {
-  getAPIDataDetails().then((data) => {
+  // recup l id dans l'url pour afficher les datas
+  const queryString_url_id = window.location.search;
+  console.log("id dans l'url", queryString_url_id);
+  const urlParams = new URLSearchParams(queryString_url_id);
+  console.log("object url params", urlParams);
+  const theId = urlParams.get("id");
+  console.log("the id", theId);
+
+  getAPIDataDetails(theId).then((data) => {
     console.log("data", data);
     const bookDetailsContainer = document.getElementById(
       "bookDetails-container"
