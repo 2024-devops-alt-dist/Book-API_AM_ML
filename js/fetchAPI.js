@@ -56,7 +56,7 @@ if (isIndexPage) {
         ? book.saleInfo.listPrice.amount
         : "Prix non défini";
       const rating = book.volumeInfo.averageRating || 0;
-      const link = `bookDetails.html?id=${book.id}`;
+      const link = `pages/bookDetails.html?id=${book.id}`;
 
       bookCard.innerHTML = `
       <img src="${image}" alt="${title}">
