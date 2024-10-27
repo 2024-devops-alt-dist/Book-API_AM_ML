@@ -35,3 +35,10 @@ Test de l'application en tant qu'utilisateur
 Livrables
 Repo Git
 Projet déployé via GitHub Pages
+
+## Modifications apportées
+
+- Création d'un script JS fetchAPI afin de récupérer les bouquins via l'API BooksAPI.
+- Réorganisation des fichiers.
+- Modification des liens sur les pages HTML concernées.
+- Modification du CSS des books cards.
